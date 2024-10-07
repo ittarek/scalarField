@@ -4,7 +4,7 @@ import SingleCard from '../components/cardComponet/SingleCard';
 
 const Discovery = () => {
      return (
-       <div className="bg-[#191A1A]  flex justify-center mx-auto h-screen ">
+       <div className="bg-[#191A1A]  flex justify-center mx-auto ">
          <div>
            {/* main card */}
            <MainCard />

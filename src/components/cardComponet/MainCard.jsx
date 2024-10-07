@@ -2,7 +2,7 @@ import React from 'react';
 import { CiBookmark } from "react-icons/ci";
 const MainCard = () => {
      return (
-       <div className="rounded overflow-hidden shadow-lg mx-auto lg:w-[700px]  w-full  bg-[#303131] my-11 transform transition-transform duration-500  hover:-translate-y-0.5">
+       <div className="rounded overflow-hidden shadow-lg mx-auto lg:w-[700px]  w-full  bg-[#202222] my-11 transform transition-transform duration-500  hover:-translate-y-0.5">
          {/* image */}
          <div className="h-48 overflow-hidden">
            <img
