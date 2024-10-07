@@ -31,30 +31,36 @@ const cardData = [
 ];
 const SingleCard = () => {
   return (
-    <div className="flex justify-center items-center gap-5">
+    <div className="lg:flex justify-center items-center gap-5 mb-5">
       {cardData.map(data => (
         <div key={data.id}>
-          <div className="w-[200px]overflow-hidden bg-[#202222] transform transition-transform duration-500  hover:-translate-y-0.5 w-[220px] rounded">
-            <img className="overflow-hidden " src={data.img} alt="" />
-            <div className=" my-3 p-2">
-              <div className="pb-1">
-                <h2 className=" text-[#DDDDDC] leading-[1.4] mt-2">
+          <div className="lg:w-[220px] overflow-hidden  w-full bg-[#202222] transform transition-transform duration-500  hover:-translate-y-0.5  rounded">
+            <div className="overflow-hidden  h-[120px]">
+              <img
+                className="object-cover w-full h-full"
+                src={data.img}
+                alt=""
+              />
+            </div>
+            <div className=" my-3 px-1">
+              <div className="">
+                <h2 className=" text-[#fff] leading-[1.4] mb-1">
                   {data.title}
                 </h2>
-                <p className=" text-[#929292] mb-3">{data.Details}</p>
+                <p className="text-sm text-[#929292] mb-4">{data.Details}</p>
               </div>
               {/* author details */}
-              <div className="flex justify-between items-center">
-                <div className="flex gap-3">
+              <div className="flex justify-between items-center ">
+                <div className="flex gap-1 items-center">
                   <img
                     className="w-[20px] h-[20px] rounded-full"
                     src={data.athImg}
                     alt=""
                   />
-                  <p>{data.authName}</p>
+                  <p className="text-[#929292] ">{data.authName}</p>
                 </div>
                 <button>
-                  <CiBookmark />
+                  <CiBookmark  className="text-[#929292]"/>
                 </button>
               </div>
             </div>

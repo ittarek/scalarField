@@ -1,0 +1,7 @@
+ul li{
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     color: #e8e8e6;
+     font-size: 12px;
+}

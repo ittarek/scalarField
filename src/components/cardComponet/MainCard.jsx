@@ -1,8 +1,7 @@
-import React from 'react';
 import { CiBookmark } from "react-icons/ci";
 const MainCard = () => {
      return (
-       <div className="rounded overflow-hidden shadow-lg mx-auto lg:w-[700px]  w-full  bg-[#202222] my-11 transform transition-transform duration-500  hover:-translate-y-0.5">
+       <div className="rounded-lg overflow-hidden shadow-lg mx-auto lg:w-[700px]  w-full  bg-[#202222] my-4 transform transition-transform duration-500  hover:-translate-y-0.5">
          {/* image */}
          <div className="h-48 overflow-hidden">
            <img
@@ -14,7 +13,7 @@ const MainCard = () => {
          {/* card items */}
          <div className="p-3">
            <div className="">
-             <h2 className="text-xl text-[#DDDDDC] leading-[1.4] my-2">
+             <h2 className="text-xl text-[#fff] leading-[1.4] my-2">
                David Lynch's Interview Project
              </h2>
              <p className=" text-[#929292]">
@@ -31,16 +30,16 @@ const MainCard = () => {
            </div>
            {/* card bottom */}
            <div className="flex justify-between items-center mt-5">
-             <div className="flex gap-3">
+             <div className="flex items-center gap-1">
                <img
                  className="w-[20px] h-[20px] rounded-full"
                  src="https://pplx-res.cloudinary.com/image/upload/t_limit/v1728181218/getty_uploads/870140864.jpg"
                  alt="author"
                />
-               <p className="text-sm">Author Name</p>
+               <p className="text-sm text-[#929292] ">Author Name</p>
              </div>
              <button>
-               <CiBookmark />
+               <CiBookmark  className='text-[#929292]'/>
              </button>
            </div>
          </div>
