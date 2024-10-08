@@ -8,40 +8,41 @@ import { FaTv } from "react-icons/fa6";
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 const Navigation = () => {
      return (
-       <div className="my-2">
+       <div className="navigation my-2">
          <ul className="flex justify-between items-center sticky top-0">
            {" "}
            <li>
              {" "}
-         
-               <CiStar size="14"/>
-             
+             <CiStar size="14" />
              Top
            </li>
            <li>
              <GiProcessor /> Tech & Science
            </li>
            <li>
-             <CiDollar size="15"/>
+             <CiDollar size="15" />
              Finance{" "}
            </li>
            <li>
              {" "}
-             <IoMdColorPalette size="14"/>
+             <IoMdColorPalette size="14" />
              Arts & Culture
            </li>
            <li>
              {" "}
-             <CiMedal size="12" className="text-white"/>
+             <CiMedal size="12" className="text-white" />
              Sports
            </li>
            <li>
-             <FaTv  size="12"/>
+             <FaTv size="12" />
              Entertainment
            </li>
-           <li>
-<HiOutlineAdjustmentsHorizontal size="20"/>
-           </li>
+ 
+             <div className="tooltip">
+               <HiOutlineAdjustmentsHorizontal size="20" />
+               <span className="tooltiptext">Personalize Discover</span>
+             </div>
+       
          </ul>
        </div>
      );

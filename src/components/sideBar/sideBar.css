@@ -1,0 +1,19 @@
+.sideBar ul{
+     width: 220px;
+}
+.sideBar ul li{
+     display: flex;
+     align-items: center;
+   gap:10px;
+     color: #929292;
+     list-style: none;
+     font-size: 16px;
+padding: 10px 10px;
+border-radius: 8px;
+}
+.sideBar ul li:hover{
+     color: #fff;
+     cursor: pointer;
+     background: #2D2F2F;
+     transition: ease-in 0.2s;
+}

@@ -5,7 +5,7 @@ import Navigation from '../navigationBar/Navigation';
 
 const Discovery = () => {
      return (
-       <div className="bg-[#191A1A] border border-[#2F3031] rounded-lg">
+       <div className="bg-[#191a1a] border border-[#2F3031] rounded-lg">
          <div className="border-b border-[#2f3031]  flex items-center gap-3">
            <svg
              aria-hidden="true"

@@ -1,7 +1,53 @@
-ul li{
+.navigation ul li{
      display: flex;
      align-items: center;
      gap: 5px;
      color: #e8e8e6;
      font-size: 12px;
+}
+
+.navigation ul li:hover{
+     opacity: 0.5;
+     transition: 0.3s;
+     cursor: pointer;
+}
+
+
+/* for tooltip */
+/* Tooltip container */
+.tooltip {
+     position: relative;
+     display: inline-block;
+     border-bottom: 1px dotted black;
+     /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip{
+     color: #e8e8e6;
+          
+}
+.tooltip .tooltiptext {
+     visibility: hidden;
+     width: 130px;
+     background-color: #555;
+     color: white;
+     text-align: center;
+     padding: 5px ;
+     border-radius: 6px;
+font-size: 12px;
+     /* Position the tooltip text */
+     position: absolute;
+     z-index: 999;
+     bottom: 125%;
+     left: 50%;
+     margin-left: -60px;
+
+     /* Fade in tooltip */
+     opacity: 0;
+     transition: opacity 0.5s;
+}
+.tooltip:hover .tooltiptext {
+     visibility: visible;
+     opacity: 5;
 }

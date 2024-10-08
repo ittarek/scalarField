@@ -5,7 +5,7 @@ import "./index.css"
 const Layout = () => {
   return (
     <main className="flex">
-      <div className="w-[22%]">
+      <div className="w-[20%]">
         <SideBar />
       </div>
       <div className='w-full my-3 mx-3'>
