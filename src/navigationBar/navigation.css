@@ -1,15 +1,35 @@
-.navigation ul li{
+.navigation ul li {
      display: flex;
      align-items: center;
      gap: 5px;
      color: #e8e8e6;
      font-size: 12px;
+     font-weight: 600;
+     overflow: hidden;
+     padding: 5px 10px;
+     border-radius: 8px;
 }
 
-.navigation ul li:hover{
+.navigation ul li a {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+}
+
+
+.navigation ul li a:hover:not(.active) {
      opacity: 0.5;
-     transition: 0.3s;
      cursor: pointer;
+     transition: 0.3s;
+}
+
+.navigation a.active {
+     background: #192A2C;
+     color: #20AFC3;
+     padding: 8px 10px;
+     border-radius: 8px;
+     font-size: 16px;
+
 }
 
 
@@ -23,19 +43,20 @@
 }
 
 /* Tooltip text */
-.tooltip{
+.tooltip {
      color: #e8e8e6;
-          
+
 }
+
 .tooltip .tooltiptext {
      visibility: hidden;
      width: 130px;
      background-color: #555;
      color: white;
      text-align: center;
-     padding: 5px ;
+     padding: 5px;
      border-radius: 6px;
-font-size: 12px;
+     font-size: 12px;
      /* Position the tooltip text */
      position: absolute;
      z-index: 999;
@@ -47,6 +68,7 @@ font-size: 12px;
      opacity: 0;
      transition: opacity 0.5s;
 }
+
 .tooltip:hover .tooltiptext {
      visibility: visible;
      opacity: 5;

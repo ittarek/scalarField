@@ -30,11 +30,13 @@ const Discovery = () => {
              <div>
                <Navigation />
              </div>
-             {/* main card */}
-             <MainCard />
+             <div>
+               {/* main card */}
+               <MainCard />
 
-             {/* single card */}
-             <SingleCard />
+               {/* single card */}
+               {/* <SingleCard /> */}
+             </div>
            </div>
          </div>
        </div>
