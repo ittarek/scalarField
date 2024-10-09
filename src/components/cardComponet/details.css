@@ -1,0 +1,35 @@
+.sideNavigation ul li {
+     color: #209AAB;
+     font-weight: 600;
+     line-height: 2;
+     list-style: none;
+
+}
+
+.sideNavigation ul li:hover {
+     color: #20B5CA;
+     cursor: pointer;
+
+}
+
+.imgDiv:hover {
+     scale: 1.01;
+}
+
+.newsTiming p {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+}
+
+.first-letter {
+    line-height: 1;
+     display: inline-block;
+     margin-right: 4px;
+     vertical-align: top;
+     max-width: 100px;
+     float: left;
+     font-size: 3rem;
+     font-weight: 800;
+     margin-right: 0.5rem;
+}
