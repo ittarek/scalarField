@@ -19,6 +19,11 @@ justify-content: space-between;
 align-items: center;
 border-top: 1px solid #2F3031;
 }
+.collapseItems p:hover{
+          color: #1E91A0;
+          transition: ease-out 0.3s;
+               cursor: pointer;
+}
 .related_container p span{
      color: #1E91A0;
      font-size: 22px;

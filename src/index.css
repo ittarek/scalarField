@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-
+margin: 0;
+padding: 0;
   background-color: #202222;
-
+box-sizing: border-box;
 
 }
 

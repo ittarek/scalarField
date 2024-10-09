@@ -19,7 +19,6 @@ const Details = () => {
   const data = useLoaderData();
   console.log(data);
   if (!data) {
-    // Redirect or show an error message if data is null
     return <p>Item not found.</p>;
   }
 
@@ -72,7 +71,7 @@ const Details = () => {
 
       <div className=" pl-9">
         {/* image */}
-        <div className="imgDiv  w-[90%] h-[400px] overflow-hidden mt-[80px] rounded-lg hover  duration-300 transition-all cursor-zoom-in">
+        <div className="imgDiv  w-[90%] h-[400px] overflow-hidden mt-[40px] rounded-lg hover  duration-300 transition-all cursor-zoom-in">
           <img
             src={image_url}
             alt="image"
@@ -251,6 +250,25 @@ const Details = () => {
             <Related />
           </div>
         </div>
+      </div>
+
+      {/* bottom  search bar*/}
+      <div className="bg-[#202222] fixed bottom-11 mx-auto w-[55%] rounded-full p-5 z-10 ml-6 ">
+        <span className="absolute  right-0 mr-11 mt-2 text-[#929292] text-sm space-x-3 ">
+          <button className="text-[#929292] hover:text-[#fafaf1] space-x-2 duration-300
+          "> <input type="radio" name="" id="" />
+            <span className="font-semibold text-lg">pro</span>
+          </button>
+          <button className="bg-[#2F302F] p-3 rounded-full">
+            <LuShare2 />
+          </button>
+        </span>
+
+        <input
+          className="w-full bg-inherit rounded-full py-4 px-3 text-[#929292] border border-[#2F3031] shadow-lg text-sm hover cursor-pointer"
+          type="text"
+          placeholder="Ask follow-up"
+        />
       </div>
     </section>
   );

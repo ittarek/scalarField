@@ -10,10 +10,12 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { CiMobile4 } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiOutlineDiscord } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 const SideBar = () => {
-  const [placeholderText, setPlaceholderText] = useState("New Thread Ctrl I");
+
   return (
-    <div className="sideBar  flex gap-6 fixed flex-col h-screen text-[#929292] mx-2 mt-6">
+    <div className="sideBar hidden 
+    lg:flex gap-6 fixed flex-col h-screen text-[#929292] mx-2 mt-6">
       <div className=" flex items-center gap-11 ">
         <img src={logo} className="w-[150px]" alt="" />{" "}
         <div className="tooltip cursor-pointer ">
@@ -25,7 +27,10 @@ const SideBar = () => {
       <div className="relative ">
         <span className="absolute top-2 left-3  text-[#929292] text-sm pointer-events-none flex gap-11 justify-between">
           New Thread{" "}
-          <span className="space-x-1" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>
+          <span
+            className="space-x-1"
+            style={{ fontFamily: "Georgia, 'Times New Roman', Times, serif" }}
+          >
             <span className="border border-[#2F3031]  px-1 rounded text-sm">
               Ctrl{" "}
             </span>
@@ -38,18 +43,22 @@ const SideBar = () => {
         <input
           className="w-[200px] bg-[#191a1a] rounded-full py-2 px-3 text-[#929292] border border-[#2F3031] shadow-lg text-sm hover hover:border-[#20AFC3] duration-500 cursor-pointer"
           type="text"
-     
         />
       </div>
 
-      <ul className=" ">
+      <ul className="sideBarUl ">
         <li>
           <PiMagnifyingGlassPlusThin /> Home
         </li>
-        <li >
-          <TbRosetteDiscountCheck />
-          Discover
-        </li>
+
+        <NavLink to="/">
+          {" "}
+          <li>
+            <TbRosetteDiscountCheck />
+            Discover
+          </li>
+        </NavLink>
+
         <li>
           <SiLiberadotchat />
           Library

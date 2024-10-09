@@ -10,7 +10,6 @@ const Content = () => {
   const data = useLoaderData();
   console.log(data);
   if (!data) {
-    // Redirect or show an error message if data is null
     return <p>Item not found.</p>;
   }
 

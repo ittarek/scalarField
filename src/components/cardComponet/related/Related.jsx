@@ -4,7 +4,7 @@ import { FaEye } from "react-icons/fa";
 import { MdOutlineDashboard } from "react-icons/md";
 const Related = () => {
   return (
-    <div className="related_container">
+    <div className="related_container mb-[200px]">
       <div className="title">
         <span>
           <MdOutlineDashboard />

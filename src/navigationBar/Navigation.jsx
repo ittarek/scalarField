@@ -10,60 +10,55 @@ import { Link, NavLink } from "react-router-dom";
 const Navigation = () => {
   const navItems = (
     <>
-      <li>
-        <NavLink to="/">
-          {" "}
+      <NavLink to="/">
+        {" "}
+   
+  
           <CiStar size="14" /> Top
-        </NavLink>
-      </li>
-      <li>
-        {" "}
-        <NavLink to="/tech">
-          {" "}
+   
+      </NavLink>
+      <NavLink to="/teach">
+
           <GiProcessor /> Tech & Science
-        </NavLink>
-      </li>
-      <li>
+
+      </NavLink>
+      <NavLink to="/finance">
         {" "}
-        <NavLink to="/classes">
+ 
           {" "}
-          <CiDollar size="15" />
+          <CiDollar size="24" />
           Finance
-        </NavLink>
-      </li>
-      <li>
+
+      </NavLink>
+      <NavLink to="/art">
         {" "}
-        <NavLink to="/blog">
-          {" "}
+ 
           <IoMdColorPalette size="14" />
           Arts & Culture
-        </NavLink>
-      </li>
-      <li>
+  
+      </NavLink>
+  
         {" "}
-        <NavLink to="/news">
+        <NavLink to="/sport">
           {" "}
           <CiMedal size="12" className="text-white" />
           Sports
         </NavLink>
-      </li>
-      <li>
+    
+      <NavLink to="/entertain">
         {" "}
-        <NavLink to="/news">
-          {" "}
+    
           <FaTv size="12" />
           Entertainment
-        </NavLink>
-      </li>
+      
+      </NavLink>
     </>
   );
 
      return (
-       <div className="navigation my-3">
+       <div className="navigation my-3 lg:w-[680px] w-full mx-auto">
          <ul className="flex justify-between items-center sticky top-0">
-          {navItems}
-           {" "}
-      
+           {navItems}{" "}
            <div className="tooltip">
              <HiOutlineAdjustmentsHorizontal size="20" />
              <span className="tooltiptext">Personalize Discover</span>

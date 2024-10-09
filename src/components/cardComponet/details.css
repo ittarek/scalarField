@@ -11,54 +11,54 @@
      cursor: pointer;
 
 }
-/* topbar */ 
+
+/* topbar */
 .topBar .tooltipstext {
-          color: #D4D4D3;
-               font-weight: 600;
-               background-color: #2F3031;
-               /* width: 100px; */
+     color: #D4D4D3;
+     font-weight: 600;
+     background-color: #2F3031;
+     /* width: 100px; */
 
-               /* height: 100px; */
-               padding: 1px 5px;
-               
-               border-radius: 5px;
-                 top: 100%;
-                 right: 10%;
-               visibility: hidden;
-               position: absolute;
-               z-index: 999;
-            
-               opacity: 0;
-               transition: ease 0.5s;
+     /* height: 100px; */
+     padding: 1px 5px;
+
+     border-radius: 5px;
+     top: 100%;
+     right: 10%;
+     visibility: hidden;
+     position: absolute;
+     z-index: 999;
+
+     opacity: 0;
+     transition: ease 0.5s;
 }
+
 .copyLink .tooltipstext {
-          color: #D4D4D3;
-               font-weight: 500;
-               background-color: #2F3031;
-               /* width: 100px; */
- font-size: 14px;
-               /* height: 100px; */
-               padding: 1px 5px;
-               
-               border-radius: 5px;
-                 top: 100%;
-                 right: 5%;
-               visibility: hidden;
-               position: absolute;
-               z-index: 999;
-            
-               opacity: 0;
-               transition: ease 0.5s;
+     color: #D4D4D3;
+     font-weight: 500;
+     background-color: #2F3031;
+     font-size: 14px;
+     padding: 1px 5px;
+     border-radius: 5px;
+     top: 100%;
+     right: 5%;
+     visibility: hidden;
+     position: absolute;
+     z-index: 999;
+     opacity: 0;
+     transition: ease 0.5s;
 }
 
-.bookMark:hover  .tooltipstext {
+.bookMark:hover .tooltipstext {
      visibility: visible;
      opacity: 5;
 }
-.copyLink:hover  .tooltipstext {
+
+.copyLink:hover .tooltipstext {
      visibility: visible;
      opacity: 5;
 }
+
 .imgDiv:hover {
      scale: 1.01;
 }

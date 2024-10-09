@@ -1,4 +1,4 @@
-.navigation ul li {
+.navigation ul a {
      display: flex;
      align-items: center;
      gap: 5px;
@@ -8,16 +8,17 @@
      overflow: hidden;
      padding: 5px 10px;
      border-radius: 8px;
+     
 }
 
-.navigation ul li a {
+.navigation ul  a {
      display: flex;
      align-items: center;
      gap: 5px;
 }
 
 
-.navigation ul li a:hover:not(.active) {
+.navigation ul  a:hover:not(.active) {
      opacity: 0.5;
      cursor: pointer;
      transition: 0.3s;
@@ -39,7 +40,7 @@
      position: relative;
      display: inline-block;
      border-bottom: 1px dotted black;
-     /* If you want dots under the hoverable text */
+   
 }
 
 /* Tooltip text */
@@ -57,14 +58,11 @@
      padding: 5px;
      border-radius: 6px;
      font-size: 12px;
-     /* Position the tooltip text */
-     position: absolute;
+        position: absolute;
      z-index: 999;
      bottom: 125%;
      left: 50%;
      margin-left: -60px;
-
-     /* Fade in tooltip */
      opacity: 0;
      transition: opacity 0.5s;
 }

@@ -5,23 +5,22 @@ import { Link } from "react-router-dom";
 
 const MainCard = () => {
   const [news, setNews] = useState([]);
-  const [page, setPage] = useState(1); // Page number for fetching more data
+  const [page, setPage] = useState(1); 
   const [hasMoreData, setHasMoreData] = useState(true);
 
-  // Function to fetch data (adjust to your API)
+  // Function to fetch data
   const fetchNews = useCallback(() => {
-    if (!hasMoreData) return; // Do not fetch if there's no more data
+    if (!hasMoreData) return; 
 
-    fetch(`/public/news.json?page=${page}`)
+    fetch( "/news.json")
       .then(res => res.json())
       .then(data => {
         if (data.length === 0) {
-          setHasMoreData(false); // No more data to load
+          setHasMoreData(false); 
      
           
         } else {
-              //  console.log(data);
-          setNews(prevNews => [...prevNews, ...data]);
+              setNews(prevNews => [...prevNews, ...data]);
           setPage(prevPage => prevPage + 1);
         }
       })
@@ -29,7 +28,7 @@ const MainCard = () => {
   }, [page, hasMoreData]);
 
   useEffect(() => {
-    fetchNews(); // Initial fetch
+    fetchNews(); 
   }, [fetchNews]);
 
   // Helper function to split array into chunks of 4
@@ -45,10 +44,10 @@ const MainCard = () => {
 
   return (
     <InfiniteScroll
-      dataLength={news.length} // Important: number of items in the list
-      next={fetchNews} // Function to call to load more data
-      hasMore={hasMoreData} // Whether there is more data to load
-      loader={<h4 className="text-center text-white">Loading more...</h4>} // Loader to show while fetching
+      dataLength={news.length} 
+      next={fetchNews} 
+      hasMore={hasMoreData} 
+      loader={<h4 className="text-center text-white">Loading more...</h4>} 
       endMessage={
         <p style={{ textAlign: "center", color: "gray" }}>
           <b>Yay! You have seen it all</b>
