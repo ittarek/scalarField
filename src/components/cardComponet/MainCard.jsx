@@ -44,10 +44,10 @@ const MainCard = () => {
 
   return (
     <InfiniteScroll
-      dataLength={news.length} 
-      next={fetchNews} 
-      hasMore={hasMoreData} 
-      loader={<h4 className="text-center text-white">Loading more...</h4>} 
+      dataLength={news.length}
+      next={fetchNews}
+      hasMore={hasMoreData}
+      loader={<h4 className="text-center text-white">Loading more...</h4>}
       endMessage={
         <p style={{ textAlign: "center", color: "gray" }}>
           <b>Yay! You have seen it all</b>
@@ -56,21 +56,22 @@ const MainCard = () => {
     >
       <div className="container mx-auto p-4 space-y-8 lg:w-[700px] w-full">
         {newsChunks.map((chunk, index) => (
-          <div key={chunk._id} className="space-y-4">
+          <div key={chunk._id} className="space-y-4 ">
             {/* Main Card */}
             {chunk[0] && (
               <Link
                 to={`/details/${chunk[0]._id}`}
-                className="rounded-lg overflow-hidden shadow-lg bg-[#202222]  transition-all  cursor-pointer hover:-translate-y-0.5"
+                className="rounded-lg shadow-lg cursor-pointer hover:-translate-y-0.5 transition-transform duration-200 inline-block"
               >
                 <div className="h-64 overflow-hidden">
                   <img
                     src={chunk[0].image_url}
                     alt="Main Card Image"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
-                <div className="p-3">
+                <div className="p-3 bg-[#202222] ">
                   <h2 className="text-2xl text-white leading-[1.4] my-2">
                     {chunk[0].title}
                   </h2>
@@ -83,6 +84,7 @@ const MainCard = () => {
                         className="w-[20px] h-[20px] rounded-full"
                         src={chunk[0].author.img}
                         alt="author"
+                        loading="lazy"
                       />
                       <p className="text-sm text-[#929292]">
                         {chunk[0].author.name}
@@ -109,6 +111,7 @@ const MainCard = () => {
                       src={data.image_url}
                       alt="Card Image"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <div className="p-3 flex justify-between flex-col">
@@ -126,6 +129,7 @@ const MainCard = () => {
                           className="w-[20px] h-[20px] rounded-full"
                           src={data.author.img}
                           alt="author"
+                          loading="lazy"
                         />
                         <p className="text-sm text-[#929292]">
                           {data.author.name}

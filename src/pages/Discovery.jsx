@@ -5,7 +5,7 @@ const Discovery = () => {
      return (
        <div className="bg-[#191a1a] border border-[#2F3031] rounded-lg ">
          <div className="border-b border-[#2f3031]  ">
-           <div className="flex items-center gap-3 ml-16">
+           <div className="flex items-center gap-3 ml-6">
              <svg
                aria-hidden="true"
                focusable="false"
